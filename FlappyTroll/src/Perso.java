@@ -14,7 +14,7 @@ public class Perso {
     int score = 0;
 
     public Perso(){
-        ImageIcon i = new ImageIcon("perso.png");
+        ImageIcon i = new ImageIcon("images/perso.png");
         still = i.getImage();
         still	= still.getScaledInstance(30,30,Image.SCALE_DEFAULT);
         x = 75 ; y=172; nx2 = 700;

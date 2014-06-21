@@ -23,8 +23,8 @@ public class Board extends JPanel implements ActionListener{
         p = new Perso();
         addKeyListener(new AL());
         setFocusable(true);
-        ImageIcon i = new ImageIcon("test.jpg");
-        ImageIcon j = new ImageIcon("fondFlappy.jpg");
+        ImageIcon i = new ImageIcon(("images/test.jpg"));
+        ImageIcon j = new ImageIcon(("images/fondFlappy.jpg"));
         img = i.getImage();
         fond= j.getImage();
         fond	= fond.getScaledInstance(785,625,Image.SCALE_DEFAULT);
