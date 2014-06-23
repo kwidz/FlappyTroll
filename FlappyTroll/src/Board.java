@@ -94,6 +94,7 @@ public class Board extends JPanel implements ActionListener{
         Graphics2D g2D = (Graphics2D) g;
         g2D.drawImage(fond,0, 0, null);
         g2D.setColor(new Color(31, 90, 5));
+
         if(!perdu) {
             //System.out.println(pipeLines.size() + " avant la boucle");
             for (int i = 0; i < pipeLines.size(); i++) {
@@ -133,6 +134,10 @@ public class Board extends JPanel implements ActionListener{
             g2D.drawString(s, 330, 40);
         }
         else{
+            g2D.drawImage(img, 0, 300, null);
+            g2D.setColor(new Color(0, 0, 0));
+            String s = String.valueOf(p.score);
+            g2D.drawString(s, 330, 40);
             g2D.drawImage(img, 700 - p.nx2, 300, null);
             Font font = new Font("Serif", Font.PLAIN, 350);
             g2D.setColor(new Color(250, 47, 47));
